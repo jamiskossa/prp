@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRP - Parti du Renouveau et du Progrès</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <!-- Iframe YouTube pour la bannière -->
+            <iframe src="https://www.youtube.com/embed/9Iq0iaNcjKs" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#programmes">Programmes</a></li>
+            <li><a href="#blog">Actualités</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#dons">Dons</a></li>
+            <li><a href="#adhesion">Adhésion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Section Présentation du Président -->
+   <!-- Section Présentation du Président -->
+<section id="presentation">
+    <div class="container">
+        <div class="president-info">
+            <h2>Notre Président</h2>
+            <img src="images/3.png" alt="Portrait du président du parti futuriste" class="president-photo">
+            <h3>M.RAPHIOU SOW</h3>
+            <p>RAPHIOU SOW, notre président charismatique, est à la tête du Parti Futuriste depuis sa création en 2025. Ingénieur de formation et passionné de technologies innovantes, RAPHIOU SOW a toujours eu à cœur de construire un avenir meilleur pour tous.</p>
+            <p>Son parcours exceptionnel dans le domaine de politique l'éthique et du développement durable lui a permis de façonner une vision unique pour notre société : une harmonie parfaite entre progrès technologique et bien-être humain.</p>
+        </div>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/8.png" alt="Jean Visionnaire lors d'un discours" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/7.png" alt="Jean Visionnaire visitant un centre de recherche" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/4.png" alt="Jean Visionnaire échangeant avec des citoyens" style="width:100%">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <main>
+
+        <!-- Section des Programmes -->
+<section id="programmes">
+    <h2>Nos Programmes</h2>
+    <div class="grid-container">
+        <figure class="programme-item">
+            <img src="images/programme1.jpg" alt="Programme 1">
+            <figcaption>Programme 1: Innovation et Technologie</figcaption>
+            <p>Développer les technologies de pointe pour une société plus connectée et durable.</p>
+        </figure>
+        
+        <figure class="programme-item">
+            <img src="images/programme2.jpg" alt="Programme 2">
+            <figcaption>Programme 2: Éducation pour Tous</figcaption>
+            <p>Assurer un accès équitable à une éducation de qualité pour chaque citoyen.</p>
+        </figure>
+        
+        <figure class="programme-item">
+            <img src="images/programme3.jpg" alt="Programme 3">
+            <figcaption>Programme 3: Santé et Bien-être</figcaption>
+            <p>Promouvoir la santé publique et le bien-être à travers des initiatives innovantes.</p>
+        </figure>
+
+        <figure class="programme-item">
+            <img src="images/programme4.jpg" alt="Programme 4">
+            <figcaption>Programme 4: Environnement Durable</figcaption>
+            <p>Protéger notre environnement pour les générations futures grâce à des politiques vertes.</p>
+        </figure>
+    </div>
+</section>
+
+
+        <!-- Section Blog / Actualités -->
+<section id="blog">
+    <h2>Actualités du Parti</h2>
+    <div class="grid-container">
+        <article class="blog-item">
+            <figure>
+                <img src="images/blog1.jpg" alt="Article 1">
+                <figcaption>Les nouvelles initiatives pour l'éducation</figcaption>
+            </figure>
+            <p>Découvrez les dernières mesures prises par notre parti pour améliorer le système éducatif...</p>
+        </article>
+        
+        <article class="blog-item">
+            <figure>
+                <img src="images/blog2.jpg" alt="Article 2">
+                <figcaption>Événement spécial sur la santé publique</figcaption>
+            </figure>
+            <p>Rejoignez-nous pour un événement dédié à la santé publique, avec des experts du domaine...</p>
+        </article>
+        
+        <article class="blog-item">
+            <figure>
+                <img src="images/blog3.jpg" alt="Article 3">
+                <figcaption>Avancées technologiques au service des citoyens</figcaption>
+            </figure>
+            <p>Notre parti continue de promouvoir l'innovation technologique pour améliorer la qualité de vie...</p>
+        </article>
+
+        <article class="blog-item">
+            <figure>
+                <img src="images/blog4.jpg" alt="Article 4">
+                <figcaption>Protection de l'environnement: Nos engagements</figcaption>
+            </figure>
+            <p>Découvrez comment nous prévoyons de protéger notre environnement pour les générations futures...</p>
+        </article>
+    </div>
+</section>
+
+
+        <!-- Section Dons -->
+        <section id="dons">
+            <h2>Faites un don</h2>
+            <form>
+                <!-- Formulaire de paiement -->
+            </form>
+        </section>
+
+        <!-- Section Adhésion -->
+        <section id="adhesion">
+            <h2>Rejoignez-nous</h2>
+            <form>
+                <!-- Formulaire d'adhésion -->
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 RPR - Parti du Renouveau et du Progrès. Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+      
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+      
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slides[slideIndex-1].style.display = "block";
+        }
+      
+        // Auto advance slides
+        setInterval(() => {
+          plusSlides(1);
+        }, 3000);
+        </script>
+</body>
+</html>

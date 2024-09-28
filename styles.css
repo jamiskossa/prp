@@ -1,0 +1,333 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+header .banner iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+}
+
+nav {
+    background-color: #00bfff;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #00bfff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* styles.css */
+
+/* Mise en page de la section Présentation */
+/* styles.css */
+
+/* Mise en page de la section Présentation avec grille */
+#presentation {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    gap: 20px; /* Espace entre les colonnes */
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Style de la présentation du président */
+.president-info {
+    text-align: left;
+}
+
+.president-info h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.president-info .president-photo {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.president-info h3 {
+    font-size: 2em;
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.president-info p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Slideshow */
+.slideshow-container {
+    max-width: 90%; /* Réduction de la taille du slideshow */
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mySlides img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Transition en fondu pour le slideshow */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; } 
+    to { opacity: 1; }
+}
+
+/* Adaptation pour mobile et tablette */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Une seule colonne sur petit écran */
+    }
+
+    .president-info h2 {
+        font-size: 2em;
+    }
+
+    .president-info h3 {
+        font-size: 1.5em;
+    }
+
+    .president-info p {
+        font-size: 1em;
+    }
+
+    .president-info .president-photo {
+        width: 120px;
+    }
+
+    .slideshow-container {
+        max-width: 100%; /* Réduction supplémentaire pour les mobiles */
+    }
+}
+
+/* styles.css */
+
+/* Section des Programmes */
+#programmes {
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#programmes h2 {
+    font-size: 2.5em;
+    color: #00bfff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Disposition en grille */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.programme-item {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.programme-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.programme-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.programme-item figcaption {
+    font-size: 1.5em;
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.programme-item p {
+    font-size: 1.1em;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+/* Adaptation pour mobile et tablette */
+@media screen and (max-width: 768px) {
+    #programmes h2 {
+        font-size: 2em;
+    }
+
+    .programme-item figcaption {
+        font-size: 1.3em;
+    }
+
+    .programme-item p {
+        font-size: 1em;
+    }
+}
+
+
+/* styles.css */
+
+/* Section Blog / Actualités */
+#blog {
+    background-color: #1a1a1a;
+    color: #f2f2f2;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#blog h2 {
+    font-size: 2.5em;
+    color: #00bfff;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Disposition en grille */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.blog-item {
+    background-color: #2c2c2c;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+
+.blog-item figure {
+    margin: 0;
+}
+
+.blog-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.blog-item figcaption {
+    font-size: 1.5em;
+    color: #00bfff;
+    margin-bottom: 10px;
+}
+
+.blog-item p {
+    font-size: 1.1em;
+    color: #cccccc;
+    line-height: 1.6;
+}
+
+/* Adaptation pour mobile et tablette */
+@media screen and (max-width: 768px) {
+    #blog h2 {
+        font-size: 2em;
+    }
+
+    .blog-item figcaption {
+        font-size: 1.3em;
+    }
+
+    .blog-item p {
+        font-size: 1em;
+    }
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #007acc;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
